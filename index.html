@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Gallery with Lightbox</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <header>
+      <div style="background-image: url('../image/image.jpeg');" class="bg-cover bg-center h-64 lg:mx-3">
+        <h1 class="text-white lg:text-6xl font-extrabold pt-40 lg:px-40 text-3xl px-20">Gallery</h1>
+      </div>
+    </header>
+
+    <main>
+        <div id="gallery" class="gallery-container">
+        </div>
+
+        <div id="lightbox" class="lightbox">
+            <div class="lightbox-content">
+                <img id="lightbox-image" src="" alt="Fullsize image">
+                <div class="caption-container">
+                    <p id="lightbox-caption"></p>
+                    <p id="lightbox-author" class="author"></p>
+                </div>
+                <button id="prev-btn" class="nav-btn prev-btn" aria-label="Previous image"><i class='bx bx-chevrons-left' ></i></button>
+                <button id="next-btn" class="nav-btn next-btn" aria-label="Next image"><i class='bx bx-chevrons-right'></i></button>
+                <button id="close-btn" class="close-btn font-extrabold" aria-label="Close lightbox"><i class='bx bx-x'></i></button>
+            </div>
+        </div>
+    </main>
+
+    <script src="public/script.js"></script>
+</body>
+</html>
